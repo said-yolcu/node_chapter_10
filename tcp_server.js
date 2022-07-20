@@ -1,6 +1,6 @@
 require('net').createServer(socket => {
     socket.on('data', data => {
-        console.log('Data received')
+        console.log(`Data received: ${data}`)
     })
 
     socket.on('end', data => {
@@ -11,4 +11,4 @@ require('net').createServer(socket => {
     socket.write('Write on the page\r\n')
 
 
-}).listen(4001)
+}).listen(4000)
